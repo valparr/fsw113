@@ -21,3 +21,20 @@ const parts = [
     { partNbr: 'WEYPU3Z', partDescr: 'Mumpenflipper', aisle: 'E3', qty: 1}
 
 ]
+
+// list of each part number and qty for check-off in the "detailsList" element
+
+// if parts requiring special handling exist (in aisle B3), list of items needing 
+// special packaging in the "specialPackaging" element, else remove element
+
+// if hazardous parts exist (in aisle J4), let employee know in the "hazardousMaterials"
+// element and remind them to get gloves, else remove element
+
+
+// if all items in the order are small parts (aisle H1), then let employee know that they should take 
+// a basket and go dirctly to aisle H1
+
+// if there are large items (anthing in aisles S, T, or U), then let the employee know in the "forkiftNeeded"
+// element that they will need to reserve a forklift, else remove the element
+
+// sum up the total number of parts and append that number to the text already in "totalItems" element
