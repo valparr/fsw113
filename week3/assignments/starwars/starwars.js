@@ -6,7 +6,7 @@
 
 function getFromSWAPI() {
     // assign values to any necessary variables
-    fetch(`https://swapi.dev/api/${queryType}/${item_id}`)
+    fetch(`https://swapi.dev/api/${queryType}/${itemID}`)
     .then(function (response) {
         return response.json()
     })
