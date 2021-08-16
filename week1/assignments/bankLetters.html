@@ -3,7 +3,7 @@
     <head>
         <title></title>
         <style>
-            .letter {
+            .letterDiv {
                 margin: 0 auto;
                 width: 400px;
                 border: black 1px solid;
@@ -30,6 +30,34 @@
             { fname: 'Petra', balance: 500.35, rate: 4.9 },
             { fname: 'Reggie', balance: 0, rate: 7.2 }
         ]
+
+        for (let x = 0; x < customers.length; x++) {
+            letterText += `<div class = 'letterDiv'>Hello, ${customers[x].fname}, `
+            switch (true) {
+                case (customers[x].balance > 0):
+                    letterText += `this is an attempt to collect a debt owed to ${bankName}. Your account is past due by the amount of ${customers[x].balance}. `
+                    break;
+                case (customers[x].balance == 0):
+                    letterText += `greetings from ${bankName}. Your balance is current. No need for action until next month. `
+                    break;
+                default: 
+                    letterText += `greetings from ${bankName}. Because you are such a great customer, we're lowering your interest rate to ${customers[x].rate}%. `
+                    break;
+            }
+            letterText += `</div><br /> `
+            
+        }
+
+        document.querySelector('#letterDiv').innerHTML = letterText
+
+
+
+
+
+
+
+
+
         // Create a loop that iterates through the customers array. Based on the customer's balance, create a personalized copy 
         // of the appropriate letter text from below. Each letter should be contained within a div with the style of 'letter'.
 
