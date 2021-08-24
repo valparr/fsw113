@@ -1,5 +1,11 @@
+* {
+  background-color: rgba(253, 201, 188, 0.959);
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
 .calendarWrapper {
-  border: silver 2px solid;
+  border: rgb(0, 0, 0) 2px solid;
   width: 525px;
   margin: 0 auto;
 }
@@ -9,7 +15,7 @@
   padding: 5px;
   font-weight: 700;
   grid-column: span 7;
-  border: silver 1px solid;
+  border: rgb(2, 2, 2) 2px solid;
 }
 
 .calendar {
@@ -18,14 +24,14 @@
 }
 
 .calendarCell {
-  border: silver 1px solid;
+  border: rgb(0, 0, 0) 2px solid;
   text-align: center;
   padding: 3px;
 }
 
 .blankDay {
-  border: silver 1px solid;
+  border: rgb(105, 105, 105) 2px solid;
   text-align: center;
   padding: 3px;
-  background-color: silver;
+  background-color: rgb(105, 105, 105);
 }
